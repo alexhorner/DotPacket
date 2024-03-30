@@ -30,17 +30,19 @@ namespace DotPacket.Kiss
             _processor = Task.Run(() => Process(_cancellationTokenSource.Token));
         }
 
-        public void Stop(out Exception? latestException)
+        public async Task<Exception?> StopAsync()
         {
-            latestException = null;
-            
-            if (_processor is null) return;
+            if (_processor is null) return null;
 
-            _cancellationTokenSource.Cancel();
+            await _cancellationTokenSource.CancelAsync();
             
-            while (_processor.Status is TaskStatus.Running) Thread.Sleep(100);
+            while (_processor.Status is TaskStatus.Running) await Task.Yield();
 
+            Exception? latestException = _processor.Exception;
+            
             _processor = null;
+
+            return latestException;
         }
 
         public bool IsRunning(out Exception? latestException)
