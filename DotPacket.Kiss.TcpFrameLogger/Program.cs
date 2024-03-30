@@ -19,7 +19,7 @@ void KissConsumerOnFrameReceived(KissConsumer sender)
 {
     KissFrame? frame = sender.TakeNextFrame();
     
-    if (frame is not null) Console.WriteLine($"[{frame.ReceivedDate.ToString(CultureInfo.InvariantCulture)}] {frame.Command}@{frame.Address}> " + Convert.ToBase64String(frame.Data));
+    if (frame is not null) Console.WriteLine($"[{frame.ReceivedDate.ToString(CultureInfo.InvariantCulture)}] C:{frame.Command}@A:{frame.Address}> " + Convert.ToBase64String(frame.Data));
 }
 
 await Task.Delay(-1);
