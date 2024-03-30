@@ -10,14 +10,14 @@ namespace DotPacket.Kiss
         
         public delegate void FrameReceivedEvent(KissConsumer sender);
      
-        private readonly Stream _rawFrameData;
+        private readonly Stream _rawFrameDataInput;
         private readonly ConcurrentQueue<KissFrame> _frames = new();
         private Task? _processor;
         private CancellationTokenSource _cancellationTokenSource = null!;
 
-        public KissConsumer(Stream rawFrameData, bool startOnInitialisation = true)
+        public KissConsumer(Stream rawFrameDataInput, bool startOnInitialisation = true)
         {
-            _rawFrameData = rawFrameData;
+            _rawFrameDataInput = rawFrameDataInput;
             
             if (startOnInitialisation) Start();
         }
@@ -66,7 +66,7 @@ namespace DotPacket.Kiss
             
             while (!cancellationToken.IsCancellationRequested)
             {
-                int readByte = _rawFrameData.ReadByte();
+                int readByte = _rawFrameDataInput.ReadByte();
 
                 switch (readByte)
                 {
