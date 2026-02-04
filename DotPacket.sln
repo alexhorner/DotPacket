@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss", "DotPacket
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss.TcpFrameLogger", "DotPacket.Kiss.TcpFrameLogger\DotPacket.Kiss.TcpFrameLogger.csproj", "{F296901A-64B0-4539-A31A-D03DDD046A72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Ax25", "DotPacket.Ax25\DotPacket.Ax25.csproj", "{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss.VirtualTnc", "DotPacket.Kiss.VirtualTnc\DotPacket.Kiss.VirtualTnc.csproj", "{8733B11F-4543-4FEC-BDC9-A14762FEADE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{F296901A-64B0-4539-A31A-D03DDD046A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F296901A-64B0-4539-A31A-D03DDD046A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F296901A-64B0-4539-A31A-D03DDD046A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8733B11F-4543-4FEC-BDC9-A14762FEADE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8733B11F-4543-4FEC-BDC9-A14762FEADE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8733B11F-4543-4FEC-BDC9-A14762FEADE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8733B11F-4543-4FEC-BDC9-A14762FEADE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
