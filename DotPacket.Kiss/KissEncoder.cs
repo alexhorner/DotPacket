@@ -2,14 +2,14 @@
 
 namespace DotPacket.Kiss
 {
-    public class KissProducer
+    public class KissEncoder
     {
         private readonly Stream _rawFrameDataOutput;
         private readonly ConcurrentQueue<byte[]?> _frames = new();
         private Task? _processor;
         private CancellationTokenSource _cancellationTokenSource = null!;
 
-        public KissProducer(Stream rawFrameDataOutput, bool startOnInitialisation = true)
+        public KissEncoder(Stream rawFrameDataOutput, bool startOnInitialisation = true)
         {
             _rawFrameDataOutput = rawFrameDataOutput;
             

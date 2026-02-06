@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss", "DotPacket.Kiss\DotPacket.Kiss.csproj", "{2C5D9AF7-3993-4C2D-8D71-4029556E7F72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss.TcpFrameLogger", "DotPacket.Kiss.TcpFrameLogger\DotPacket.Kiss.TcpFrameLogger.csproj", "{F296901A-64B0-4539-A31A-D03DDD046A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Kiss.FrameLogger", "DotPacket.Kiss.FrameLogger\DotPacket.Kiss.FrameLogger.csproj", "{F296901A-64B0-4539-A31A-D03DDD046A72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPacket.Ax25", "DotPacket.Ax25\DotPacket.Ax25.csproj", "{7910DC4E-2720-4EC1-9A8C-7434AE0DB65F}"
 EndProject
